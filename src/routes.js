@@ -1,6 +1,7 @@
 import { Router } from 'express';
 
 import UserController from './app/controllers/UserController';
+import RecipientController from './app/controllers/RecipientController';
 
 const routes = new Router();
 
@@ -19,12 +20,12 @@ routes.post('/users', UserController.store);
 routes.post('/sessions');
 
 /* Cadastra destinatário */
-routes.post('/recipient');
+routes.post('/recipient', RecipientController.store);
 
 /* Atualiza destinatário */
-routes.put('/recipient');
+routes.put('/recipient', RecipientController.update);
 
 /* Lista destinatários */
-routes.get('/recipient');
+routes.get('/recipient', RecipientController.index);
 
 export default routes;
