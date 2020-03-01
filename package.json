@@ -7,6 +7,10 @@
   "author": "Tháygoro M.L.",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "dev:debug": "nodemon --inspect src/server.js"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
