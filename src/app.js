@@ -1,9 +1,18 @@
 import express from 'express';
+import routes from './routes';
 
-const server = express();
+import './database';
 
-server.get('/', (req, res) => {
-  res.json({ message: 'Teste' });
-});
+class App {
+  constructor() {
+    this.server = express();
 
-server.listen(3000);
+    this.routes();
+  }
+
+  routes() {
+    this.server.use(routes);
+  }
+}
+
+export default new App().server;

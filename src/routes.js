@@ -1,5 +1,7 @@
 import { Router } from 'express';
 
+import UserController from './app/controllers/UserController';
+
 const routes = new Router();
 
 /*
@@ -11,7 +13,7 @@ const routes = new Router();
 */
 
 /* Cadastra usuário administrador */
-routes.post('/users');
+routes.post('/users', UserController.store);
 
 /* Autentica usuário administrador */
 routes.post('/sessions');
