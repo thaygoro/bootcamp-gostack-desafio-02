@@ -2,7 +2,7 @@ import { Router } from 'express';
 
 const routes = new Router();
 
-/* 
+/*
   Rotas para:
   - Autenticação de usuário com email e senha; POST
   - Cadastro de destinatarios; POST
