@@ -10,11 +10,11 @@
   :warning: Etapa 1/4 do Desafio Final :warning:
 </h3>
 
-<p>Esse [desafio](https://github.com/Rocketseat/bootcamp-gostack-desafio-02) faz parte do Desafio Final do bootcamp GoStack da [Rocketseat](https://rocketseat.com.br/), ele consiste em criar uma aplicação completa (Back-end, Front-end e Mobile) que no final é avaliada para emissão do Certificado do Bootcamp.</p>
+Esse [desafio](https://github.com/Rocketseat/bootcamp-gostack-desafio-02) faz parte do Desafio Final do bootcamp GoStack da [Rocketseat](https://rocketseat.com.br/), ele consiste em criar uma aplicação completa (Back-end, Front-end e Mobile) com NodeJS, ReactJS e React Native.
 
 <p align="center">
   <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#ferramentas-utilizadas">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias-utilizadas">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#como-rodar">Como rodar</a>
 </p>
 
@@ -35,9 +35,7 @@ A aplicação desenvolvida nesse desafio é um app para uma transportadora fict�
 - O cadastro de destinatários só pode ser feito por administradores autenticados na aplicaçã;
 - O destinatário não pode se autenticar no sistema, ou seja, não possui senha;
 
-## **Ferramentas utilizadas**
-
-Você deverá criar a aplicação do zero utilizando o [Express](https://expressjs.com/), além de precisar configurar as seguintes ferramentas:
+## **Tecnologias utilizadas**
 
 - [Express](https://expressjs.com/);
 - [Sucrase](https://github.com/alangpierce/sucrase) + [Nodemon](https://nodemon.io/);
@@ -45,6 +43,8 @@ Você deverá criar a aplicação do zero utilizando o [Express](https://express
 - [Sequelize](https://sequelize.org/) + [PostgreSQL](https://www.postgresql.org/):
   - Migrations;
   - Seeds;
+- [JWT](https://jwt.io/);
+- [BcryptJS](https://github.com/dcodeIO/bcrypt.js);
 
 
 ## **Como rodar**
