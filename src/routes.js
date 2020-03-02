@@ -1,6 +1,7 @@
 import { Router } from 'express';
 
 import UserController from './app/controllers/UserController';
+import SessionController from './app/controllers/SessionController';
 import RecipientController from './app/controllers/RecipientController';
 
 const routes = new Router();
@@ -17,7 +18,7 @@ const routes = new Router();
 routes.post('/users', UserController.store);
 
 /* Autentica usuário administrador */
-routes.post('/sessions');
+routes.post('/sessions', SessionController.store);
 
 /* Cadastra destinatário */
 routes.post('/recipient', RecipientController.store);
