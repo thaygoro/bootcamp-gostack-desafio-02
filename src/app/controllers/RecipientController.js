@@ -3,7 +3,7 @@ import Recipient from '../models/Recipient';
 
 class RecipientController {
   async store(req, res) {
-    const schema = Yup.object.shape({
+    const schema = Yup.object().shape({
       name: Yup.string().required(),
       street: Yup.string().required(),
       number: Yup.string().required(),
@@ -44,7 +44,7 @@ class RecipientController {
   }
 
   async update(req, res) {
-    const schema = Yup.object.shape({
+    const schema = Yup.object().shape({
       name: Yup.string().required(),
       street: Yup.string().required(),
       number: Yup.string().required(),
@@ -91,6 +91,9 @@ class RecipientController {
   async index(req, res) {
     const recipients = await Recipient.findAll();
 
+    if (!recipients) {
+      return res.status(404).json({ error: 'No recipient found' });
+    }
     return res.json(recipients);
   }
 }
